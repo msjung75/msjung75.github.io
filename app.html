@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>세왕상사 주류주문 앱</title>
+<style>
+  body{margin:0;font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-serif;background:#1B2A4A;color:#fff;
+       display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center}
+  .box{padding:32px 24px;max-width:420px}
+  h1{font-size:24px;margin:16px 0 6px}
+  p{color:#9DB0D0;font-size:15px;line-height:1.6;margin:0 0 28px}
+  a.btn{display:block;margin:12px auto;padding:16px 20px;border-radius:14px;background:#fff;color:#1B2A4A;
+        font-weight:700;font-size:17px;text-decoration:none;max-width:320px}
+  a.btn.sub{background:transparent;border:1.5px solid #4A5C84;color:#DEE6F2}
+  .since{color:#B8924A;font-size:13px;letter-spacing:2px;margin-top:36px}
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>세왕상사 주류주문</h1>
+  <p>매장에서 언제든 간편하게 —<br>앱을 설치하고 24시간 주문하세요.</p>
+  <a class="btn" id="main" href="https://play.google.com/store/apps/details?id=com.sewang.sewangcustomer">앱 설치하기</a>
+  <a class="btn sub" href="https://apps.apple.com/kr/app/id1462888177">iPhone (App Store)</a>
+  <a class="btn sub" href="https://play.google.com/store/apps/details?id=com.sewang.sewangcustomer">Android (Google Play)</a>
+  <div class="since">SEWANG SANGSA · SINCE 1978</div>
+</div>
+<script>
+  var ua=navigator.userAgent||'';
+  var ios=/iPhone|iPad|iPod/i.test(ua);
+  var and=/Android/i.test(ua);
+  var A='https://play.google.com/store/apps/details?id=com.sewang.sewangcustomer';
+  var I='https://apps.apple.com/kr/app/id1462888177';
+  var m=document.getElementById('main');
+  if(ios){m.href=I;m.textContent='App Store에서 설치하기';location.replace(I);}
+  else if(and){m.href=A;m.textContent='Google Play에서 설치하기';location.replace(A);}
+</script>
+</body>
+</html>
