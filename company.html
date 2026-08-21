@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEWANG SANGSA · 세왕상사</title>
+<style>
+:root{--navy:#1B2A4A;--navy2:#24334F;--gold:#B8924A;--golds:#DEBE7E;--sky:#9DB0D0;--line:#E8EBF0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Apple SD Gothic Neo','Noto Sans KR','Hiragino Sans','PingFang SC',sans-serif;color:#1A1D24;background:#fff}
+.wrap{max-width:560px;margin:0 auto}
+.hero{background:var(--navy);color:#fff;padding:44px 24px 36px;text-align:center}
+.hero .tag{color:var(--golds);font-size:13px;letter-spacing:1px;margin-top:10px}
+.hero h1{font-size:26px;margin-top:6px}
+.hero .head{color:var(--sky);font-size:15px;margin-top:10px;line-height:1.5}
+.langs{display:flex;justify-content:center;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.langs button{border:1px solid #4A5C84;background:transparent;color:var(--sky);border-radius:20px;padding:6px 14px;font-size:13px;cursor:pointer}
+.langs button.on{background:#fff;color:var(--navy);border-color:#fff;font-weight:700}
+.stats{display:flex;background:#F7F5F0;border-bottom:1px solid var(--line)}
+.stats div{flex:1;text-align:center;padding:18px 6px}
+.stats b{display:block;font-size:22px;color:var(--navy)}
+.stats span{font-size:11px;color:#5B636E;line-height:1.4;display:block;margin-top:4px}
+section{padding:30px 24px 6px}
+h2{color:var(--navy);font-size:20px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:inline-block;margin-bottom:16px}
+.chart{display:flex;align-items:flex-end;gap:10px;height:150px;margin:8px 0 4px}
+.chart .bar{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%}
+.chart .v{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.chart .b{width:70%;background:var(--navy2);border-radius:4px 4px 0 0}
+.chart .bar:last-child .b{background:var(--gold)}
+.chart .y{font-size:11px;color:#5B636E;margin-top:6px}
+.quote{background:#F7F5F0;border-left:3px solid var(--gold);padding:18px;border-radius:0 12px 12px 0;color:var(--navy);font-size:15px;line-height:1.8}
+.ceo{font-weight:700;margin-top:14px;font-size:15px}
+.card{background:var(--navy);color:#fff;border-radius:14px;padding:18px;margin-bottom:12px}
+.card b{color:var(--golds);display:block;margin-bottom:6px;font-size:15px}
+.card p{color:#DEE6F2;font-size:13.5px;line-height:1.6}
+img.ph{width:100%;border-radius:14px;display:block}
+.cap{font-size:12px;color:#5B636E;margin:6px 0 16px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+td:first-child{color:var(--navy);font-weight:700;width:88px;white-space:nowrap}
+.appbox{background:var(--navy);color:#fff;border-radius:16px;padding:26px 20px;text-align:center;margin:6px 0 8px}
+.appbox p{color:var(--sky);font-size:13.5px;margin:8px 0 16px}
+.btn{display:inline-block;background:#fff;color:var(--navy);font-weight:700;border-radius:12px;padding:14px 26px;text-decoration:none;font-size:15px}
+.btn.ghost{background:transparent;color:#fff;border:1.5px solid #4A5C84;margin-top:10px;display:block}
+footer{background:var(--navy);color:var(--sky);text-align:center;padding:28px 20px;font-size:12px;line-height:1.8;margin-top:30px}
+footer .g{color:var(--golds);letter-spacing:2px}
+a{color:inherit}
+</style>
+</head>
+<body>
+<div class="hero"><div class="wrap">
+  <div class="langs" id="langs">
+    <button data-l="ko">한국어</button><button data-l="en">English</button>
+    <button data-l="ja">日本語</button><button data-l="zh">中文</button>
+  </div>
+  <svg viewBox="0 0 1709 1180" style="width:110px;height:auto;margin:0 auto;display:block"><g transform="translate(0.000000,1180.000000) scale(0.100000,-0.100000)" fill="#FFFFFF" fill-opacity="1"><path d="M7835 11325 c-44 -8 -166 -14 -272 -14 -190 -1 -194 -1 -268 -31 -62
+-25 -90 -30 -158 -30 -161 -1 -275 -17 -346 -51 -36 -17 -131 -46 -211 -65
+-353 -84 -418 -110 -532 -213 -120 -109 -324 -268 -458 -359 -281 -190 -432
+-358 -575 -641 -34 -68 -175 -282 -252 -383 -24 -31 -56 -86 -72 -122 -49
+-109 -124 -125 -478 -107 -118 6 -219 8 -226 4 -6 -3 -711 -8 -1567 -9 -1556
+-3 -1556 -3 -1681 -39 -152 -45 -185 -62 -233 -115 -92 -103 -91 -225 3 -299
+27 -21 51 -55 74 -104 38 -79 94 -138 148 -156 71 -23 313 -41 547 -41 407 0
+453 -19 438 -180 -9 -99 -18 -115 -114 -213 -63 -64 -103 -96 -147 -116 -85
+-40 -170 -114 -224 -196 -32 -47 -72 -90 -126 -133 -117 -93 -161 -139 -205
+-213 -22 -37 -62 -86 -90 -109 -38 -32 -53 -53 -64 -90 -11 -36 -39 -77 -111
+-161 -53 -61 -103 -126 -110 -143 -37 -82 -73 -185 -80 -226 -9 -56 -65 -170
+-116 -233 -21 -27 -47 -73 -59 -103 -11 -30 -33 -81 -49 -112 -92 -180 -122
+-330 -109 -537 2 -27 2 -104 0 -170 -1 -66 3 -201 9 -300 9 -155 9 -192 -5
+-265 -18 -94 -14 -117 28 -190 22 -38 26 -57 26 -122 0 -102 22 -193 70 -287
+61 -121 85 -181 104 -258 16 -63 23 -77 58 -105 117 -96 197 -195 232 -289 10
+-26 36 -64 58 -85 22 -22 69 -83 104 -136 89 -137 132 -181 202 -206 32 -12
+76 -37 97 -55 22 -19 55 -42 73 -51 18 -9 57 -39 86 -65 55 -50 126 -83 220
+-102 28 -6 78 -26 111 -44 33 -18 88 -41 123 -50 49 -14 76 -30 130 -77 128
+-114 254 -153 532 -168 245 -13 458 -27 605 -41 129 -13 379 12 485 47 67 22
+348 58 551 71 81 5 87 4 115 -20 47 -41 24 -70 -109 -134 -93 -46 -128 -56
+-248 -78 -150 -27 -172 -36 -188 -72 -28 -61 -8 -119 64 -193 73 -74 86 -108
+79 -207 -7 -95 11 -129 96 -179 69 -40 110 -87 133 -152 10 -27 29 -65 43 -83
+14 -19 32 -57 40 -86 18 -61 44 -98 87 -119 46 -23 200 -141 285 -218 40 -36
+89 -74 110 -85 20 -10 60 -43 88 -72 27 -30 74 -74 103 -98 29 -24 80 -77 113
+-116 32 -40 83 -89 111 -108 29 -19 72 -51 97 -72 25 -21 61 -44 80 -53 19 -8
+56 -30 82 -49 32 -23 65 -37 104 -43 35 -6 80 -23 113 -43 88 -54 226 -97 309
+-97 38 0 113 -9 168 -21 89 -18 110 -20 199 -10 184 21 255 30 263 35 5 3 52
+12 106 21 53 8 113 22 132 30 20 8 75 22 122 31 108 20 140 33 189 78 47 42
+80 56 134 56 41 0 82 17 134 55 17 12 55 28 85 35 111 26 189 79 245 166 28
+43 47 60 97 85 173 86 273 154 368 249 52 52 158 147 235 210 101 83 165 146
+230 225 50 60 126 148 171 195 44 47 100 114 124 149 55 82 406 440 473 483
+60 38 105 41 285 18 109 -14 115 -13 205 9 65 16 143 26 267 32 316 16 464 29
+515 44 27 9 124 27 215 40 333 51 392 65 518 127 47 22 87 33 149 39 97 10
+102 12 205 89 74 56 98 67 262 115 39 11 101 45 181 100 67 45 145 90 174 100
+38 12 72 35 121 81 57 54 92 76 223 139 108 51 174 90 219 127 34 30 92 69
+126 88 155 82 267 189 298 284 26 77 90 186 153 259 57 67 142 180 257 345 37
+52 84 138 109 195 24 56 66 154 94 218 42 94 56 144 81 275 17 87 42 192 55
+232 16 47 25 94 25 136 0 36 11 109 24 164 13 55 27 130 31 168 4 38 13 107
+20 154 25 152 27 239 11 415 -9 94 -21 226 -27 295 -6 69 -19 159 -30 202 -10
+42 -19 104 -19 137 0 44 -8 80 -26 123 -14 33 -32 100 -40 149 -19 121 -45
+184 -104 253 -65 75 -94 127 -115 201 -48 169 -184 374 -288 434 -31 18 -93
+74 -154 139 -104 112 -249 233 -300 253 -15 5 -70 36 -122 67 -92 55 -95 56
+-190 63 -64 4 -114 13 -151 28 -71 29 -431 62 -635 59 -141 -3 -141 -3 -219
+36 -78 40 -78 40 -295 41 -216 1 -216 1 -262 -41 -57 -52 -95 -61 -209 -46
+-137 18 -321 1 -410 -38 -89 -39 -153 -51 -234 -43 -128 12 -185 -50 -136
+-147 57 -112 222 -228 445 -311 32 -12 79 -42 115 -75 34 -31 100 -80 147
+-111 47 -31 109 -84 141 -120 31 -35 73 -73 92 -85 19 -12 60 -45 90 -73 64
+-59 117 -96 215 -149 61 -33 152 -103 236 -181 19 -17 31 -44 42 -92 22 -97
+47 -150 105 -219 70 -83 159 -266 166 -342 10 -99 28 -184 56 -277 44 -143 56
+-266 35 -362 -13 -57 -16 -105 -13 -183 4 -73 0 -125 -10 -170 -9 -42 -17
+-149 -21 -300 -7 -255 -6 -248 -72 -336 -30 -40 -49 -97 -104 -300 -13 -51
+-33 -107 -44 -125 -11 -19 -25 -54 -31 -78 -6 -25 -31 -81 -55 -126 -36 -68
+-44 -96 -50 -161 -10 -103 -51 -222 -108 -311 -43 -67 -49 -72 -101 -87 -60
+-18 -100 -57 -233 -232 -72 -95 -153 -170 -226 -210 -29 -15 -75 -46 -104 -68
+-28 -23 -71 -53 -95 -69 -23 -15 -55 -37 -70 -49 -50 -39 -302 -46 -460 -12
+-37 8 -100 14 -141 14 -73 0 -76 1 -123 40 -31 26 -72 48 -113 60 -182 54
+-310 243 -355 521 -12 71 -26 115 -60 184 -33 65 -50 116 -62 183 -12 67 -24
+102 -43 127 -23 30 -123 154 -221 275 -76 93 -159 246 -175 319 -8 38 -22 87
+-31 110 -17 44 -17 77 6 245 15 112 -1 339 -29 401 -41 91 -208 189 -362 210
+-90 13 -149 37 -248 100 -41 26 -88 42 -205 70 -175 41 -193 48 -263 92 -28
+18 -75 42 -103 53 -78 31 -125 67 -261 200 -105 103 -141 130 -248 192 -141
+81 -182 115 -249 203 -26 33 -94 110 -152 171 -72 76 -126 145 -172 220 -90
+145 -134 201 -192 245 -67 50 -76 68 -145 274 -33 99 -89 242 -125 318 -48
+104 -66 153 -71 200 -3 34 -11 85 -16 114 -6 28 -12 87 -13 130 -7 176 -17
+311 -28 365 -23 125 24 373 102 528 20 41 45 98 54 125 9 28 33 82 54 120 37
+70 37 70 142 121 140 69 210 91 370 113 74 11 162 30 195 42 97 36 123 39 205
+23 42 -7 125 -18 185 -23 118 -10 179 -29 275 -85 30 -19 75 -45 100 -59 71
+-40 125 -96 145 -152 24 -66 30 -72 89 -102 28 -14 69 -44 91 -68 22 -23 71
+-65 108 -93 110 -82 188 -161 249 -252 31 -47 69 -95 85 -106 15 -12 62 -52
+103 -89 105 -94 157 -119 245 -119 109 -1 164 23 231 100 41 46 81 78 147 115
+109 63 148 97 192 165 30 46 41 54 105 79 49 19 91 44 130 79 69 62 264 148
+441 196 200 53 218 60 281 108 92 69 121 117 126 201 5 91 -6 111 -148 256
+-65 67 -138 152 -163 190 -55 85 -70 99 -172 160 -44 26 -100 62 -125 80 -25
+18 -69 45 -99 60 -30 15 -93 53 -141 86 -49 34 -122 72 -169 89 -45 17 -104
+41 -131 55 -140 71 -253 107 -355 115 -79 5 -111 12 -151 33 -29 14 -79 31
+-112 36 -33 5 -82 19 -108 30 -35 15 -77 22 -144 25 -130 6 -326 24 -380 36
+-54 11 -54 11 -155 -5z m-3357 -2755 c66 -30 80 -71 83 -250 3 -132 1 -149
+-19 -190 -28 -59 -28 -90 3 -151 15 -29 29 -81 35 -124 6 -44 20 -95 35 -125
+14 -28 32 -78 41 -113 8 -34 30 -100 49 -147 47 -120 83 -269 94 -396 13 -141
+27 -178 111 -299 39 -55 91 -131 116 -170 26 -38 64 -88 86 -111 34 -36 40
+-50 49 -109 5 -38 21 -89 35 -115 26 -48 261 -281 342 -340 22 -15 60 -55 85
+-87 69 -90 166 -177 230 -207 65 -31 81 -55 92 -136 4 -30 20 -84 36 -119 42
+-92 39 -111 -23 -164 -29 -24 -72 -56 -94 -70 -23 -14 -61 -52 -86 -84 -49
+-65 -177 -141 -273 -163 -27 -6 -68 -22 -91 -35 -22 -13 -70 -35 -105 -49
+-151 -58 -197 -80 -244 -116 -70 -52 -84 -59 -206 -91 -59 -15 -138 -43 -176
+-62 -37 -19 -93 -42 -123 -50 -30 -9 -71 -28 -90 -43 -19 -14 -55 -35 -80 -46
+-25 -10 -68 -35 -97 -55 -42 -29 -65 -37 -124 -43 -71 -8 -72 -9 -123 -63 -57
+-62 -71 -69 -171 -86 -38 -7 -97 -25 -130 -40 -33 -16 -82 -32 -110 -36 -27
+-4 -88 -16 -135 -28 -141 -35 -573 -33 -685 4 -44 15 -115 34 -158 44 -71 15
+-83 21 -120 62 -23 25 -67 62 -97 83 -113 77 -193 179 -239 305 -16 44 -47
+119 -69 166 -77 165 -89 246 -96 669 -5 308 1 399 39 530 72 254 96 355 109
+454 12 87 21 122 49 175 19 36 40 83 46 103 7 20 36 67 66 103 30 36 68 92 86
+125 17 33 62 93 100 134 37 41 73 85 79 96 27 51 202 273 280 355 47 50 100
+113 117 140 18 28 80 94 138 149 58 54 122 123 142 154 43 68 36 62 194 167
+69 45 157 111 195 145 38 33 103 82 144 107 41 25 95 63 120 86 137 122 428
+207 538 157z m2107 -4944 c181 -20 244 -45 356 -142 30 -25 92 -64 139 -86 92
+-43 123 -67 147 -113 9 -16 40 -55 70 -86 42 -44 55 -66 61 -100 6 -36 13 -47
+37 -58 47 -22 74 -52 86 -94 7 -26 32 -63 74 -107 37 -40 77 -95 94 -132 17
+-34 40 -74 51 -89 29 -34 52 -167 38 -217 -6 -20 -29 -64 -53 -97 -68 -96 -94
+-148 -105 -205 -15 -77 -30 -96 -90 -109 -78 -17 -148 -67 -161 -116 -17 -63
+-32 -88 -59 -96 -14 -4 -72 -21 -130 -39 -163 -50 -280 -43 -445 27 -66 28
+-169 65 -230 83 -129 38 -125 36 -212 101 -95 72 -118 94 -180 177 -35 47 -82
+93 -131 129 -113 83 -295 246 -324 291 -14 21 -49 65 -78 98 -77 87 -138 178
+-162 237 -32 76 -71 130 -125 170 -72 52 -86 57 -181 68 -120 15 -122 17 -77
+68 30 33 52 45 109 63 39 11 105 38 147 59 42 21 114 48 160 59 94 24 157 56
+276 141 44 32 94 64 110 70 131 50 525 73 788 45z"/></g></svg>
+  <h1 id="t-name"></h1>
+  <div class="tag" id="t-tag"></div>
+  <div class="head" id="t-head"></div>
+</div></div>
+<div class="wrap">
+  <section style="padding:20px 24px 4px">
+    <div style="position:relative;padding-top:56.25%;border-radius:14px;overflow:hidden;background:#000">
+      <iframe src="https://www.youtube.com/embed/_uNzOWhSteQ?rel=0" style="position:absolute;inset:0;width:100%;height:100%;border:0" allowfullscreen title="SEWANG SANGSA"></iframe>
+    </div>
+  </section>
+  <div class="stats">
+    <div><b id="t-s1n"></b><span id="t-s1l"></span></div>
+    <div><b id="t-s2n"></b><span id="t-s2l"></span></div>
+    <div><b id="t-s3n"></b><span id="t-s3l"></span></div>
+  </div>
+
+  <section><h2 id="t-chart_t"></h2>
+    <div class="chart" id="chart"></div>
+  </section>
+
+  <section><h2 id="t-greet_t"></h2>
+    <div class="quote" id="t-greet"></div>
+    <div class="ceo" id="t-ceo"></div>
+  </section>
+
+  <section><h2 id="t-st_t"></h2><div id="cards"></div></section>
+
+  
+
+  <section><h2 id="t-net_t"></h2>
+    <p style="font-size:14px;line-height:1.7;margin-top:12px" id="t-net"></p>
+  </section>
+
+  <section><h2 id="t-ov_t"></h2><table id="ov"></table></section>
+
+  <section>
+    <div class="appbox">
+      <b style="font-size:18px" id="t-app_t"></b>
+      <p id="t-app_d"></p>
+      <a class="btn" id="appbtn" href="https://www.sewang.co.kr/app"><span id="t-app_b"></span></a>
+    </div>
+  </section>
+
+  <section><h2 id="t-ct_t"></h2>
+    <table>
+      <tr><td id="t-tel_l"></td><td><a href="tel:+8222035311">+82-2-2203-5311</a> · <a href="tel:+821033347750">010-3334-7750</a></td></tr>
+      <tr><td>E-mail</td><td><a href="mailto:chboys@hanmail.net">chboys@hanmail.net</a></td></tr>
+      <tr><td id="t-web_l"></td><td><a href="https://www.sewang.co.kr">www.sewang.co.kr</a></td></tr>
+    </table>
+    <a class="btn ghost" style="text-align:center;color:var(--navy);border-color:var(--navy)" href="tel:+8222035311" id="t-call"></a>
+  </section>
+</div>
+<footer>
+  <div class="g">SEWANG SANGSA · 世旺商事 · SINCE 1978</div>
+  60, Jinhwangdo-ro 61-gil, Gangdong-gu, Seoul, Korea
+</footer>
+<script>
+var T={"ko": {"name": "세왕상사(주)", "tag": "세상에 크게 번성한다 · SINCE 1978", "head": "서울·경기 리딩 주류 유통 파트너", "s1n": "796억", "s1l": "2025 매출 (DART 감사보고서)", "s2n": "6,000+", "s2l": "전국 거래처", "s3n": "6개", "s3l": "물류 거점", "chart_t": "매출 추이 (단위: 억원)", "greet_t": "대표 인사말", "greet": "1978년 시작한 세왕상사는<br>50년 가까이 서울·경기 지역<br>매장 사장님들의 곁을 지켜온<br>종합주류도매사입니다.<br><br>결품 없는 안정된 공급과<br>매장의 매출 증대를<br>함께 고민하는 자세로<br>사장님 한 분 한 분의<br>좋은 파트너가 되겠습니다.", "ceo": "대표이사 정민성", "st_t": "핵심 강점", "st": [["일본 사케·생맥주 전국 1위", "삿포로생·기린생·아사히생·산토리생 (10L·15L 케그) — 이자카야·라멘·스시집에 최적"], ["3사 소주·맥주 안정 공급", "하이트진로·오비맥주·롯데주류 전 라인업, 결품 없이 매장 회전율을 지킵니다"], ["매주 시장동향 리포트", "주간 시장·트렌드 리포트로 매장 의사결정 지원 (4개 언어)"]], "ph1": "서울 강동구 본사 사옥 · 1,200평", "ph2": "지하 400평 품목별 보관창고", "net_t": "전국 물류 네트워크", "net": "서울 · 경기 · 청주 · 대구 · 부산 · 제주 6개 거점 — 어느 지역이든 같은 조건으로 거래합니다.", "ov_t": "회사 개요", "ov": [["상호", "세왕상사(주) · 世旺商事"], ["설립", "1978년 (2028년 창립 50주년)"], ["대표", "정민성"], ["본사", "서울 강동구 진황도로61길 60 가동"], ["사업", "종합주류도매 — 소주·맥주·사케·생맥주·와인·위스키"], ["채널", "음식점·주점·이자카야·호텔·웨딩홀·프랜차이즈"]], "app_t": "세왕 주문앱", "app_d": "24시간 언제든 주문 · 매입 현황 실시간 확인", "app_b": "앱 설치하기", "ct_t": "상담·주문", "call": "전화 걸기", "tel_l": "대표번호", "web_l": "홈페이지"}, "en": {"name": "SEWANG SANGSA Co., Ltd.", "tag": "Prospering in the World · SINCE 1978", "head": "Seoul & Gyeonggi's Leading Liquor Distribution Partner", "s1n": "₩79.6B", "s1l": "2025 Revenue (audited, DART)", "s2n": "6,000+", "s2l": "Partner venues nationwide", "s3n": "6", "s3l": "Logistics hubs", "chart_t": "Revenue (KRW billions)", "greet_t": "Message from the CEO", "greet": "Founded in 1978, Sewang Sangsa has stood beside restaurant and bar owners across Seoul and Gyeonggi for nearly 50 years as a full-line liquor wholesaler.<br><br>With stable, shortage-free supply and a genuine commitment to growing each venue's sales, we promise to be a good partner to every single owner we serve.", "ceo": "Minsung Jung, CEO", "st_t": "Why Sewang", "st": [["No.1 in Japanese sake & draft beer", "Sapporo, Kirin, Asahi & Suntory draft (10L·15L kegs) — ideal for izakaya, ramen & sushi restaurants"], ["Stable supply of all major Korean brands", "Full lineups from HiteJinro, OB and Lotte — no stockouts, steady turnover"], ["Weekly market trend report", "Weekly insights that help owners make better decisions (4 languages)"]], "ph1": "Headquarters, Gangdong-gu, Seoul (~4,000㎡ site)", "ph2": "1,300㎡ underground warehouse, sorted by category", "net_t": "Nationwide Logistics", "net": "Six hubs — Seoul, Gyeonggi, Cheongju, Daegu, Busan and Jeju — same terms wherever you are.", "ov_t": "Company Overview", "ov": [["Name", "SEWANG SANGSA Co., Ltd. (世旺商事)"], ["Founded", "1978 (50th anniversary in 2028)"], ["CEO", "Minsung Jung"], ["HQ", "60, Jinhwangdo-ro 61-gil, Gangdong-gu, Seoul"], ["Business", "Full-line liquor wholesale — soju, beer, sake, draft, wine, whisky"], ["Clients", "Restaurants, bars, izakaya, hotels, wedding halls, franchises"]], "app_t": "Sewang Ordering App", "app_d": "Order anytime, 24/7 · track purchases in real time", "app_b": "Get the App", "ct_t": "Contact & Orders", "call": "Call us", "tel_l": "Main line", "web_l": "Website"}, "ja": {"name": "セワン商事株式会社", "tag": "世に大きく栄える · SINCE 1978", "head": "ソウル・京畿を代表する酒類流通パートナー", "s1n": "796億₩", "s1l": "2025年売上 (DART監査報告書)", "s2n": "6,000+", "s2l": "全国取引先", "s3n": "6", "s3l": "物流拠点", "chart_t": "売上推移 (億ウォン)", "greet_t": "代表挨拶", "greet": "1978年創業のセワン商事は、50年近くソウル・京畿地域の飲食店オーナーの皆様と共に歩んできた総合酒類卸売会社です。<br><br>欠品のない安定供給と、お店の売上向上を共に考える姿勢で、オーナー様お一人おひとりの良きパートナーであり続けます。", "ceo": "代表取締役 チョン・ミンソン", "st_t": "セワンの強み", "st": [["日本酒・生ビール 全国1位", "サッポロ・キリン・アサヒ・サントリー生 (10L·15L樽) — 居酒屋・ラーメン・寿司店に最適"], ["韓国3社の焼酎・ビール安定供給", "ハイト眞露・OB・ロッテ全ラインナップ、欠品なく安定供給"], ["毎週の市場トレンドレポート", "週刊レポートで店舗の意思決定をサポート (4言語)"]], "ph1": "ソウル江東区 本社社屋 (約4,000㎡)", "ph2": "地下1,300㎡ 品目別保管倉庫", "net_t": "全国物流ネットワーク", "net": "ソウル・京畿・清州・大邱・釜山・済州の6拠点 — 全国どこでも同じ条件でお取引いただけます。", "ov_t": "会社概要", "ov": [["社名", "セワン商事株式会社 (世旺商事)"], ["設立", "1978年 (2028年 創立50周年)"], ["代表", "チョン・ミンソン"], ["本社", "ソウル特別市江東区 真皇道路61キル60"], ["事業", "総合酒類卸売 — 焼酎・ビール・日本酒・生ビール・ワイン・ウイスキー"], ["取引先", "飲食店・居酒屋・ホテル・ウェディングホール・フランチャイズ"]], "app_t": "セワン注文アプリ", "app_d": "24時間いつでも注文 · 仕入れ状況をリアルタイム確認", "app_b": "アプリをダウンロード", "ct_t": "お問い合わせ", "call": "電話をかける", "tel_l": "代表番号", "web_l": "ウェブサイト"}, "zh": {"name": "世旺商事株式会社", "tag": "旺盛于世 · SINCE 1978", "head": "首尔·京畿领先的酒类流通合作伙伴", "s1n": "796亿₩", "s1l": "2025年营业额 (DART审计报告)", "s2n": "6,000+", "s2l": "全国合作商户", "s3n": "6", "s3l": "物流基地", "chart_t": "营业额趋势 (亿韩元)", "greet_t": "代表致辞", "greet": "世旺商事创立于1978年，近50年来一直陪伴在首尔·京畿地区餐饮店主身边，是一家综合酒类批发公司。<br><br>我们以稳定无缺货的供应、与店主共同思考提升营业额的态度，承诺成为每一位店主的好伙伴。", "ceo": "代表理事 郑玟成", "st_t": "核心优势", "st": [["日本清酒·生啤 全国第一", "札幌·麒麟·朝日·三得利生啤 (10L·15L桶) — 居酒屋·拉面店·寿司店首选"], ["韩国三大厂商烧酒·啤酒稳定供应", "海特真露·OB·乐天全线产品，无缺货，周转稳定"], ["每周市场动向报告", "每周市场·趋势报告，助力门店经营决策 (4种语言)"]], "ph1": "首尔江东区总部大楼 (约4,000㎡)", "ph2": "地下1,300㎡分类保管仓库", "net_t": "全国物流网络", "net": "首尔·京畿·清州·大邱·釜山·济州 6大基地 — 全国任何地区均可同等条件交易。", "ov_t": "公司简介", "ov": [["公司名", "世旺商事株式会社"], ["成立", "1978年 (2028年成立50周年)"], ["代表", "郑玟成"], ["总部", "首尔市江东区真皇道路61街60"], ["业务", "综合酒类批发 — 烧酒·啤酒·清酒·生啤·葡萄酒·威士忌"], ["客户", "餐厅·酒馆·居酒屋·酒店·婚礼厅·连锁加盟"]], "app_t": "世旺订购App", "app_d": "24小时随时下单 · 实时查看进货明细", "app_b": "下载App", "ct_t": "咨询·订购", "call": "拨打电话", "tel_l": "代表电话", "web_l": "官方网站"}};
+var SALES=[["2021",360],["2022",679],["2023",711],["2024",776],["2025",796]];
+function set(l){
+  var t=T[l]||T.ko;
+  document.documentElement.lang=l;
+  ["name","tag","head","s1n","s1l","s2n","s2l","s3n","s3l","chart_t","greet_t","greet","ceo","st_t","ph1","ph2","net_t","net","ov_t","app_t","app_d","app_b","ct_t","call","tel_l","web_l"].forEach(function(k){
+    var el=document.getElementById("t-"+k); if(el) el.innerHTML=t[k];
+  });
+  var c=document.getElementById("cards"); c.innerHTML="";
+  t.st.forEach(function(s,i){c.innerHTML+='<div class="card"><b>'+(i+1)+'. '+s[0]+'</b><p>'+s[1]+'</p></div>';});
+  var o=document.getElementById("ov"); o.innerHTML="";
+  t.ov.forEach(function(r){o.innerHTML+='<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>';});
+  var ch=document.getElementById("chart"); ch.innerHTML="";
+  SALES.forEach(function(s){
+    var h=Math.round(s[1]/796*100);
+    ch.innerHTML+='<div class="bar"><div class="v">'+s[1]+'</div><div class="b" style="height:'+h+'%"></div><div class="y">'+s[0]+'</div></div>';
+  });
+  document.querySelectorAll("#langs button").forEach(function(b){b.className=(b.dataset.l===l)?"on":"";});
+  try{localStorage.setItem("sw_lang",l);}catch(e){}
+}
+document.querySelectorAll("#langs button").forEach(function(b){b.onclick=function(){set(b.dataset.l);};});
+var saved=null; try{saved=localStorage.getItem("sw_lang");}catch(e){}
+var nav=(navigator.language||"ko").toLowerCase();
+var auto = nav.indexOf("ko")===0?"ko":nav.indexOf("ja")===0?"ja":nav.indexOf("zh")===0?"zh":"en";
+set(saved||auto);
+</script>
+</body>
+</html>
