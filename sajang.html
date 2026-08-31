@@ -1,144 +1,141 @@
 <!DOCTYPE html>
-  <html lang="ko">
+<html lang="ko">
   <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>가게를 여시나요 · 세왕상사</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>가게를 여시나요 · 세왕상사</title>
   <meta name="description" content="서울·경기 종합주류도매 세왕상사. 상권 분석부터 냉장고·생맥 장비, 첫 발주까지 오픈 전에 함께 봅니다.">
   <style>
-  :root{--navy:#1B2A4A;--navy2:#24334F;--gold:#B8924A;--golds:#DEBE7E;--sky:#9DB0D0;--line:#E8EBF0}
-  *{box-sizing:border-box}
-body{font-family:'Apple SD Gothic Neo','Noto Sans KR','Hiragino Sans',sans-serif;color:#1A1D24;background:#fff;margin:0;word-break:keep-all;line-height:1.7}
-.wrap{max-width:560px;margin:0 auto}
-.hero{background:var(--navy);color:#fff;padding:46px 24px 38px;text-align:center}
-.hero .eyebrow{color:var(--golds);font-size:12px;letter-spacing:2px;margin-bottom:14px}
-.hero h1{font-size:29px;line-height:1.4;margin:0 0 14px;font-weight:800}
-.hero h1 em{font-style:normal;color:var(--golds)}
-.hero p{color:var(--sky);font-size:14.5px;margin:0 auto;max-width:26em}
-.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin-top:22px}
-.chips span{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:6px 13px;font-size:12.5px;color:#fff}
-section{padding:32px 24px 6px}
-h2{color:var(--navy);font-size:20px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:inline-block;margin:0 0 16px;font-weight:800}
-.note{color:#67707F;font-size:13.5px;margin:-8px 0 16px}
-.grouphd{font-size:12px;letter-spacing:1.5px;color:var(--gold);font-weight:700;margin:22px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--line)}
-ol.svc{list-style:none;margin:0;padding:0;counter-reset:s}
-ol.svc.two{counter-reset:s 7}
-ol.svc li{counter-increment:s;display:grid;grid-template-columns:26px 1fr;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}
-ol.svc li:last-child{border-bottom:0}
-  ol.svc li::before{content:counter(s);color:var(--gold);font-weight:700;font-size:13px;padding-top:3px}
-ol.svc strong{grid-column:2;font-weight:700;display:block;font-size:15.5px}
-ol.svc span{grid-column:2;color:#67707F;font-size:13.5px;display:block;margin-top:1px}
-.rows{margin-top:4px}
-.row{display:grid;grid-template-columns:104px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
-.row:last-child{border-bottom:0}
-.row b{color:var(--navy);font-weight:700;font-size:14px}
-.row span{color:#39424F}
-.row span em{font-style:normal;color:#67707F;font-size:13.5px;display:block;margin-top:2px}
-.vid{position:relative;padding-bottom:56.25%;height:0;border-radius:12px;overflow:hidden;margin:14px 0 6px;background:#000}
-.vid iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-.vcap{color:#67707F;font-size:13px;margin:0 0 20px}
-.q{background:#F7F9FB;border-left:3px solid var(--navy);border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:10px}
-  .q p{margin:0;font-size:15px;font-weight:600}
-.q em{font-style:normal;display:block;color:#67707F;font-size:13.5px;margin-top:5px;font-weight:400}
-.prep{display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));gap:10px;margin-top:6px}
-.p{background:#F7F9FB;border-radius:10px;padding:14px 15px 16px}
-  .p .n{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:1px}
-.p .t{font-weight:700;margin-top:4px;font-size:15px}
-.p .d{color:#67707F;font-size:13px;margin-top:2px}
-.stats{display:flex;justify-content:center;gap:8px;background:#F7F9FB;border-radius:12px;padding:18px 10px;margin-top:8px}
-.stats div{flex:1;text-align:center}
-.stats .v{color:var(--navy);font-size:19px;font-weight:800;letter-spacing:-.5px}
-.stats .l{color:#67707F;font-size:11.5px;margin-top:3px;line-height:1.4}
-.cta{background:var(--navy);color:#fff;border-radius:14px;padding:26px 22px;margin:18px 0 6px;text-align:center}
-.cta .t{font-size:17px;font-weight:700;margin-bottom:4px}
-.cta .d{color:var(--sky);font-size:13.5px;margin-bottom:18px}
-.tel{display:block;color:#fff;font-size:28px;font-weight:800;text-decoration:none;letter-spacing:-1px;border-bottom:2px solid var(--golds);padding-bottom:3px;margin:0 auto 18px;width:fit-content}
-.btns{display:flex;flex-wrap:wrap;gap:9px;justify-content:center}
-.btn{display:inline-block;background:#fff;color:var(--navy);font-weight:700;border-radius:12px;padding:13px 22px;text-decoration:none;font-size:14.5px}
-.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
-footer{background:var(--navy);color:var(--sky);text-align:center;padding:28px 20px;font-size:12px;line-height:1.9;margin-top:34px}
-footer a{color:var(--golds);text-decoration:none}
-@media(min-width:600px){.hero h1{font-size:33px}}
-</style>
+    :root{--navy:#1B2A4A;--navy2:#24334F;--gold:#B8924A;--golds:#DEBE7E;--sky:#9DB0D0;--line:#E8EBF0}
+    *{box-sizing:border-box}
+    body{font-family:'Apple SD Gothic Neo','Noto Sans KR','Hiragino Sans',sans-serif;color:#1A1D24;background:#fff;margin:0;word-break:keep-all;line-height:1.7}
+    .wrap{max-width:560px;margin:0 auto}
+    .hero{background:var(--navy);color:#fff;padding:46px 24px 38px;text-align:center}
+    .hero .eyebrow{color:var(--golds);font-size:12px;letter-spacing:2px;margin-bottom:14px}
+    .hero h1{font-size:29px;line-height:1.4;margin:0 0 14px;font-weight:800}
+    .hero h1 em{font-style:normal;color:var(--golds)}
+    .hero p{color:var(--sky);font-size:14.5px;margin:0 auto;max-width:26em}
+    .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin-top:22px}
+    .chips span{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:6px 13px;font-size:12.5px;color:#fff}
+    section{padding:32px 24px 6px}
+    h2{color:var(--navy);font-size:20px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:inline-block;margin:0 0 16px;font-weight:800}
+    .note{color:#67707F;font-size:13.5px;margin:-8px 0 16px}
+    .grouphd{font-size:12px;letter-spacing:1.5px;color:var(--gold);font-weight:700;margin:22px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+    ol.svc{list-style:none;margin:0;padding:0;counter-reset:s}
+    ol.svc.two{counter-reset:s 7}
+    ol.svc li{counter-increment:s;display:grid;grid-template-columns:26px 1fr;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}
+    ol.svc li:last-child{border-bottom:0}
+    ol.svc li::before{content:counter(s);color:var(--gold);font-weight:700;font-size:13px;padding-top:3px}
+    ol.svc strong{grid-column:2;font-weight:700;display:block;font-size:15.5px}
+    ol.svc span{grid-column:2;color:#67707F;font-size:13.5px;display:block;margin-top:1px}
+    .rows{margin-top:4px}
+    .row{display:grid;grid-template-columns:104px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+    .row:last-child{border-bottom:0}
+    .row b{color:var(--navy);font-weight:700;font-size:14px}
+    .row span{color:#39424F}
+    .row span em{font-style:normal;color:#67707F;font-size:13.5px;display:block;margin-top:2px}
+    .vid{position:relative;padding-bottom:56.25%;height:0;border-radius:12px;overflow:hidden;margin:14px 0 6px;background:#000}
+    .vid iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+    .vcap{color:#67707F;font-size:13px;margin:0 0 20px}
+    .q{background:#F7F9FB;border-left:3px solid var(--navy);border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:10px}
+    .q p{margin:0;font-size:15px;font-weight:600}
+    .q em{font-style:normal;display:block;color:#67707F;font-size:13.5px;margin-top:5px;font-weight:400}
+    .prep{display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));gap:10px;margin-top:6px}
+    .p{background:#F7F9FB;border-radius:10px;padding:14px 15px 16px}
+    .p .n{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:1px}
+    .p .t{font-weight:700;margin-top:4px;font-size:15px}
+    .p .d{color:#67707F;font-size:13px;margin-top:2px}
+    .stats{display:flex;justify-content:center;gap:8px;background:#F7F9FB;border-radius:12px;padding:18px 10px;margin-top:8px}
+    .stats div{flex:1;text-align:center}
+    .stats .v{color:var(--navy);font-size:19px;font-weight:800;letter-spacing:-.5px}
+    .stats .l{color:#67707F;font-size:11.5px;margin-top:3px;line-height:1.4}
+    .cta{background:var(--navy);color:#fff;border-radius:14px;padding:26px 22px;margin:18px 0 6px;text-align:center}
+    .cta .t{font-size:17px;font-weight:700;margin-bottom:4px}
+    .cta .d{color:var(--sky);font-size:13.5px;margin-bottom:18px}
+    .tel{display:block;color:#fff;font-size:28px;font-weight:800;text-decoration:none;letter-spacing:-1px;border-bottom:2px solid var(--golds);padding-bottom:3px;margin:0 auto 18px;width:fit-content}
+    .btns{display:flex;flex-wrap:wrap;gap:9px;justify-content:center}
+    .btn{display:inline-block;background:#fff;color:var(--navy);font-weight:700;border-radius:12px;padding:13px 22px;text-decoration:none;font-size:14.5px}
+    .btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+    footer{background:var(--navy);color:var(--sky);text-align:center;padding:28px 20px;font-size:12px;line-height:1.9;margin-top:34px}
+    footer a{color:var(--golds);text-decoration:none}
+    @media(min-width:600px){.hero h1{font-size:33px}}
+    </style>
   </head>
   <body>
 
-  <div class="hero">
+    <div class="hero">
+      <div class="wrap">
+        <div class="eyebrow">서울 · 경기 종합주류도매 · SINCE 1978</div>div>
+        <h1>가게를 여시나요?<br><em>술은 그 다음입니다.</em></h1>
+      <p>자리를 잡고, 메뉴를 짜고, 인테리어를 넣는 동안 주류 쪽에서 미리 정해둬야 할 게 생각보다 많습니다. 그걸 같이 봐 드립니다.</p>
+      <div class="chips"><span>신규 오픈 준비 중</span><span>2호점 · 이전</span><span>업종 변경</span><span>거래처 검토</span></div>div>
+      </div>div>
+    </div>div>
+  
   <div class="wrap">
-  <div class="eyebrow">서울 · 경기 종합주류도매 · SINCE 1978</div>
-  <h1>가게를 여시나요?<br><em>술은 그 다음입니다.</em></h1>
-  <p>자리를 잡고, 메뉴를 짜고, 인테리어를 넣는 동안 주류 쪽에서 미리 정해둬야 할 게 생각보다 많습니다. 그걸 같이 봐 드립니다.</p>
-  <div class="chips"><span>신규 오픈 준비 중</span><span>2호점 · 이전</span><span>업종 변경</span><span>거래처 검토</span></div>
-  </div>
-  </div>
-
-  <div class="wrap">
-
+  
   <section>
-  <h2>세왕이 하는 일, 열두 가지</h2>
-  <p class="note">술 갖다드리는 건, 그 다음입니다.</p>
+    <h2>세왕이 하는 일, 열두 가지</h2>
+    <p class="note">술 갖다드리는 건, 그 다음입니다.</p>p>
 
-  <div class="grouphd">문 열기 전</div>
-  <ol class="svc">
-  <li><strong>상권부터 같이 봅니다</strong><span>언제 붐비는지 · 객단가 · 요즘 이 동네에서 뭐가 되는지</span></li>
-  <li><strong>메뉴 구성을 보고 어울리는 술을 붙입니다</strong><span>음식이 정해져야 어떤 술이 나갈지 보입니다</span></li>
-  <li><strong>어떤 술을 놓을지 정합니다</strong><span>상권마다 잘 팔리는 술이 다릅니다</span></li>
-  <li><strong>판매용 주류냉장고를 넣어드립니다</strong><span>콘센트 자리는 도면 단계에서 잡아야 나중에 안 뜯습니다</span></li>
-  <li><strong>생맥주 냉각기 같은 장비를 들입니다</strong><span>냉각기 자리와 배관은 인테리어 전에 정해져야 합니다</span></li>
-  <li><strong>잔과 부자재를 오픈 전에 채워둡니다</strong><span>여는 날 아침에 모자라면 손 쓸 방법이 없습니다</span></li>
-  <li><strong>오픈 프로모션을 같이 짭니다</strong><span>첫 달에 사람이 얼마나 오느냐가 그 뒤를 정합니다</span></li>
-  </ol>
-
-  <div class="grouphd">열고 나서</div>
+    <div class="grouphd">문 열기 전</div>div>
+    <ol class="svc">
+      <li><strong>상권부터 같이 봅니다</strong><span>언제 붐비는지 · 객단가 · 요즘 이 동네에서 뭐가 되는지</span></li>
+    <li><strong>메뉴 구성을 보고 어울리는 술을 붙입니다</strong><span>음식이 정해져야 어떤 술이 나갈지 보입니다</span>span></li>
+    <li><strong>어떤 술을 놓을지 정합니다</strong><span>상권마다 잘 팔리는 술이 다릅니다</span></li>
+    <li><strong>판매용 주류냉장고를 넣어드립니다</strong><span>콘센트 자리는 도면 단계에서 잡아야 나중에 안 뜯습니다</span>span></li>
+    <li><strong>생맥주 냉각기 같은 장비를 들입니다</strong><span>냉각기 자리와 배관은 인테리어 전에 정해져야 합니다</span></li>
+    <li><strong>잔과 부자재를 오픈 전에 채워둡니다</strong><span>여는 날 아침에 모자라면 손 쓸 방법이 없습니다</span>span></li>
+    <li><strong>오픈 프로모션을 같이 짭니다</strong><span>첫 달에 사람이 얼마나 오느냐가 그 뒤를 정합니다</span></li>
+    </ol>ol>
+  
+  <div class="grouphd">열고 나서</div>div>
   <ol class="svc two">
   <li><strong>신제품이 나오면 알려드립니다</strong></li>
-<li><strong>프로모션이 있으면 소개해드립니다</strong><span>같은 술이라도 조건이 붙는 시기가 있습니다</span></li>
-  <li><strong>상담이 필요하면 영업사원이 찾아갑니다</strong><span>매장에 앉아서 같이 봅니다</span></li>
+  <li><strong>프로모션이 있으면 소개해드립니다</strong><span>같은 술이라도 조건이 붙는 시기가 있습니다</span></li>
+  <li><strong>상담이 필요하면 영업사원이 찾아갑니다</strong><span>매장에 앉아서 같이 봅니다</span>span></li>
   <li><strong>뜨는 트렌드는 주간 정보지로 보내드립니다</strong><span>매주 시장이 어떻게 도는지 정리해 드립니다</span></li>
-  <li><strong>필요하면 수입사 · 제조사까지 연결합니다</strong><span>저희 선에서 끝나지 않는 일도 있습니다</span></li>
-  </ol>
-</section>
-
-  <section>
-<h2>배송은 이렇게 돕니다</h2>
-  <div class="rows">
-<div class="row"><b>지역</b><span>서울 · 경기 전역<em>서울 · 경기 · 청주 · 대구 · 부산 · 제주 6개 물류 거점</em></span></div>
-<div class="row"><b>시간</b><span>아침 일찍, 문 열기 전에 닿습니다<em>점심 장사 시작할 때 냉장고가 비어 있으면 그날 저녁까지 영향이 갑니다</em></span></div>
-  <div class="row"><b>부재 시</b><span>키를 맡겨주신 매장은 먼저 들어가 넣어둡니다<em>그렇지 않은 매장은 오픈 시간에 맞춰 다시 돕니다</em></span></div>
-  <div class="row"><b>공병</b><span>배송 나간 김에 빈 병을 싣고 옵니다<em>가게에 빈 상자가 쌓이지 않습니다</em></span></div>
-  <div class="row"><b>취급</b><span>소주 · 맥주 · 생맥주 · 청주 · 사케 · 와인 · 위스키 · 무알콜 0.0<em>하이트진로 · 오비맥주 · 롯데주류 전 라인업 / 일본 사케 · 생맥주 전국 1위</em></span></div>
-  <div class="row"><b>발주</b><span>전화 한 통, 또는 세왕 주문앱으로 24시간<em>매입 현황도 실시간으로 확인하실 수 있습니다</em></span></div>
-  </div>
+  <li><strong>필요하면 수입사 · 제조사까지 연결합니다</strong><span>저희 선에서 끝나지 않는 일도 있습니다</span>span></li>
+  </ol>ol>
   </section>
-
+  
+  <section>
+  <h2>배송은 이렇게 돕니다</h2>
+  <div class="rows">
+  <div class="row"><b>지역</b><span>서울 · 경기 전역<em>서울 · 경기 · 청주 · 대구 · 부산 · 제주 6개 물류 거점</em></span></div>div>
+  <div class="row"><b>시간</b><span>아침 일찍, 문 열기 전에 닿습니다<em>점심 장사 시작할 때 냉장고가 비어 있으면 그날 저녁까지 영향이 갑니다</em></span></div>div>
+  <div class="row"><b>부재 시</b><span>키를 맡겨주신 매장은 먼저 들어가 넣어둡니다<em>그렇지 않은 매장은 오픈 시간에 맞춰 다시 돕니다</em></span></div>div>
+  <div class="row"><b>공병</b><span>배송 나간 김에 빈 병을 싣고 옵니다<em>가게에 빈 상자가 쌓이지 않습니다</em></span></div>div>
+  <div class="row"><b>취급</b><span>소주 · 맥주 · 생맥주 · 청주 · 사케 · 와인 · 위스키 · 무알콜 0.0<em>하이트진로 · 오비맥주 · 롯데주류 전 라인업 / 일본 사케 · 생맥주 전국 1위</em></span></div>div>
+  <div class="row"><b>발주</b><span>전화 한 통, 또는 세왕 주문앱으로 24시간<em>매입 현황도 실시간으로 확인하실 수 있습니다</em></span></div>div>
+  </div>div>
+  </section>
   <section>
   <h2>영상으로 보기</h2>
-  <div class="vid"><iframe src="https://www.youtube.com/embed/CvT2sMB1g2M" title="도매사는 술만 갖다주는 곳일까요?" allowfullscreen loading="lazy"></iframe></div>
-  <p class="vcap">도매사는 술만 갖다주는 곳일까요? — 세어보니 열두 가지 (2분)</p>
-  <div class="vid"><iframe src="https://www.youtube.com/embed/CjxUb_Mrf94" title="소주 한 병이 사장님 가게에 오기까지" allowfullscreen loading="lazy"></iframe></div>
-  <p class="vcap">이 소주 한 병이 사장님 가게에 오기까지 (2분)</p>
+  <div class="vid"><iframe src="https://www.youtube.com/embed/_uNzOWhSteQ" title="잘되는 가게 뒤에는, 보이지 않는 파트너가 있습니다" allowfullscreen loading="lazy"></iframe>iframe></div>div>
+  <p class="vcap">잘되는 가게 뒤에는, 보이지 않는 파트너가 있습니다 &mdash; 세왕상사는 이런 회사입니다 (53초)</p>p>
+  <div class="vid"><iframe src="https://www.youtube.com/embed/CvT2sMB1g2M" title="도매사는 술만 갖다주는 곳일까요?" allowfullscreen loading="lazy"></iframe>iframe></div>div>
+  <p class="vcap">도매사는 술만 갖다주는 곳일까요? &mdash; 세어보니 열두 가지 (2분)</p>p>
+  <p class="vcap">소주 한 병이 가게에 닿기까지의 과정도 담았습니다. <a href="https://youtu.be/CjxUb_Mrf94" target="_blank" rel="noopener" style="color:var(--navy);font-weight:600;text-decoration:none">영상 보기 &rarr;</a>a></p>p>
   </section>
-
   <section>
   <h2>이럴 때 부르시면 됩니다</h2>
-  <p class="note">아직 계약 안 하셔도 됩니다. 아래 중 하나라도 해당되면 통화 한 번이 빠릅니다.</p>
-  <div class="q"><p>자리는 정했는데, 뭘 놓아야 할지 모르겠다<em>업태와 상권이 정해지면 구성은 좁혀집니다</em></p></div>
-  <div class="q"><p>냉장고랑 생맥주 장비를 어디서 어떻게 받는지 모르겠다<em>도면 나오기 전에 정해야 뜯는 일이 없습니다</em></p></div>
-  <div class="q"><p>2호점인데, 지금 거래처를 그대로 가야 할지 고민이다<em>1호점은 그대로 두고 2호점만 따로 가는 경우도 많습니다</em></p></div>
-  <div class="q"><p>첫 발주를 얼마나 넣어야 할지 감이 안 온다<em>평수와 좌석수로 기준을 잡아드립니다</em></p></div>
+  <p class="note">아직 계약 안 하셔도 됩니다. 아래 중 하나라도 해당되면 통화 한 번이 빠릅니다.</p>p>
+  <div class="q"><p>자리는 정했는데, 뭘 놓아야 할지 모르겠다<em>업태와 상권이 정해지면 구성은 좁혀집니다</em>em></p></div>div>
+  <div class="q"><p>냉장고랑 생맥주 장비를 어디서 어떻게 받는지 모르겠다<em>도면 나오기 전에 정해야 뜯는 일이 없습니다</em></p></div>div>
+  <div class="q"><p>2호점인데, 지금 거래처를 그대로 가야 할지 고민이다<em>1호점은 그대로 두고 2호점만 따로 가는 경우도 많습니다</em></p></div>div>
+  <div class="q"><p>첫 발주를 얼마나 넣어야 할지 감이 안 온다<em>평수와 좌석수로 기준을 잡아드립니다</em>em></p></div>div>
   </section>
-
   <section>
   <h2>연락 전에</h2>
   <p class="note">이 네 가지만 알려주시면, 첫 통화에서 구성과 견적 방향까지 나옵니다.</p>
   <div class="prep">
-  <div class="p"><div class="n">01</div><div class="t">오픈 예정일</div><div class="d">아직 미정이어도 대략</div></div>
-  <div class="p"><div class="n">02</div><div class="t">업태</div><div class="d">이자카야 · 호프 · 고깃집 등</div></div>
-  <div class="p"><div class="n">03</div><div class="t">평수 · 좌석수</div><div class="d">첫 발주량 기준이 됩니다</div></div>
-  <div class="p"><div class="n">04</div><div class="t">위치</div><div class="d">동 단위면 충분합니다</div></div>
-  </div>
+  <div class="p"><div class="n">01</div>div><div class="t">오픈 예정일</div>div><div class="d">아직 미정이어도 대략</div>div></div>div>
+  <div class="p"><div class="n">02</div>div><div class="t">업태</div>div><div class="d">이자카야 · 호프 · 고깃집 등</div>div></div>div>
+  <div class="p"><div class="n">03</div>div><div class="t">평수 · 좌석수</div>div><div class="d">첫 발주량 기준이 됩니다</div>div></div>div>
+  <div class="p"><div class="n">04</div>div><div class="t">위치</div>div><div class="d">동 단위면 충분합니다</div>div></div>div>
+  </div>div>
   </section>
-
   <section>
   <h2>세왕상사는</h2>
   <div class="stats">
@@ -146,28 +143,30 @@ footer a{color:var(--golds);text-decoration:none}
   <div><div class="v">796억</div><div class="l">2025 매출<br>(DART 감사보고서)</div></div>
   <div><div class="v">6,000+</div><div class="l">전국 거래처</div></div>
   </div>
-  </section>
-
+  </section>section>
   <section>
-  <div class="cta">
-<div class="t">오픈 전 상담은 무료입니다</div>
-<div class="d">도면 사진 한 장, 메뉴판 사진 한 장이면 시작됩니다</div>
-  <a class="tel" href="tel:+82222035311">02-2203-5311</a>
-  <div class="btns">
-  <a class="btn" href="tel:+82222035311">전화 걸기</a>
-  <a class="btn ghost" href="https://pf.kakao.com/_ZGIMG" target="_blank" rel="noopener">카카오톡</a>
-  <a class="btn ghost" href="https://www.instagram.com/sewangliquor" target="_blank" rel="noopener">인스타그램 DM</a>
-  </div>
-  </div>
+    <div class="cta">
+      <div class="t">오픈 전 상담은 무료입니다</div>
+      <div class="d">도면 사진 한 장, 메뉴판 사진 한 장이면 시작됩니다</div>
+      <a class="tel" href="tel:+82222035311">02-2203-5311</a>a>
+      <div class="btns">
+        <a class="btn" href="tel:+82222035311">전화 걸기</a>a>
+        <a class="btn ghost" href="https://pf.kakao.com/_ZGIMG" target="_blank" rel="noopener">카카오톡</a>a>
+        <a class="btn ghost" href="https://www.instagram.com/sewangliquor" target="_blank" rel="noopener">인스타그램 DM</a>a>
+      </div>
+    </div>div>
   </section>
-
   </div>
-
-  <footer>
-  세왕상사(주) · 世旺商事 · SINCE 1978<br>
-  서울 강동구 진황도로61길 60<br>
-  <a href="https://msjung75.github.io/company.html">회사 소개 보기</a> · <a href="https://www.sewang.co.kr">www.sewang.co.kr</a>
-  </footer>
-
+    <footer>
+      세왕상사(주) · 世旺商事 · SINCE 1978<br>
+      서울 강동구 진황도로61길 60<br>
+      <a href="https://msjung75.github.io/company.html">회사 소개 보기</a>a> · <a href="https://www.sewang.co.kr">www.sewang.co.kr</a>a>
+    </footer>
   </body>
-  </html>
+</html>html>
+    </footer>
+  </section></div></div></p></em></em></p></p></em></em></b></h2></li></span></strong></li></li></span></strong></li></li></span></strong></li></li></span></strong></li></li></span></strong></li></li></span></strong></li>
+  </section></span></span></p></em></h1>
+  </body>
+  </style></title>
+  </head>
