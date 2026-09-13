@@ -172,3 +172,21 @@ footer a{color:var(--golds);text-decoration:none}
 
 </body>
 </html>
+
+
+<!-- 광고·상담 전환 측정 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVF4M8V5JD"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-YVF4M8V5JD');
+document.addEventListener('DOMContentLoaded',function(){
+  var p=new URLSearchParams(location.search);
+  if(p.get('utm_source')==='naver') gtag('event','campaign_landing_view',{campaign_source:'naver',campaign_medium:p.get('utm_medium')||'cpc',campaign_name:p.get('utm_campaign')||'new_opening'});
+  function track(selector,eventName,method){document.querySelectorAll(selector).forEach(function(link){link.addEventListener('click',function(){gtag('event',eventName,{contact_method:method});});});}
+  track('a[href^="tel:"]','consultation_phone_click','phone');
+  track('a[href*="pf.kakao.com"]','consultation_kakao_click','kakao');
+  track('a[href*="instagram.com"]','consultation_instagram_click','instagram');
+});
+</script>
