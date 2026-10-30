@@ -104,6 +104,17 @@ footer a{color:var(--golds);text-decoration:none}
 
 <div class="wrap">
 
+
+<section aria-labelledby="reel-guides" id="reel-guides">
+<h2 id="reel-guides">릴스에서 보신 창업 체크리스트</h2>
+<p class="note">궁금한 주제를 눌러 블로그에서 자세히 확인하세요.</p>
+<a class="q reel-guide" data-topic="first_order" href="https://blog.naver.com/sewang88/224432666198" style="display:block;text-decoration:none;color:var(--navy)"><strong>01 · 첫 발주</strong><span style="display:block;font-size:14px;color:#67707F">과하게 주문하지 않는 5가지 기준 →</span></a>
+<a class="q reel-guide" data-topic="equipment" href="https://blog.naver.com/sewang88/224426222683" style="display:block;text-decoration:none;color:var(--navy)"><strong>02 · 냉장고·장비</strong><span style="display:block;font-size:14px;color:#67707F">이전 오픈 전 냉장고를 먼저 확인한 이유 →</span></a>
+<a class="q reel-guide" data-topic="supplier" href="https://blog.naver.com/sewang88/224412127636" style="display:block;text-decoration:none;color:var(--navy)"><strong>03 · 주류 거래처</strong><span style="display:block;font-size:14px;color:#67707F">음식점 주류 납품 전 확인할 5가지 →</span></a>
+<a class="q reel-guide" data-topic="delivery" href="https://blog.naver.com/sewang88/224442212870" style="display:block;text-decoration:none;color:var(--navy)"><strong>04 · 실제 현장</strong><span style="display:block;font-size:14px;color:#67707F">세왕상사의 아침 8시, 배송 준비 현장 →</span></a>
+<p style="font-size:13px;color:#67707F">상담하실 때 “인스타에서 보고 왔어요”와 매장 위치·업종·오픈 예정일을 함께 알려주세요.</p>
+</section>
+
 <section aria-labelledby="weekly-report">
   <h2 id="weekly-report">이번 주 주류동향</h2>
   <div class="q"><p>음식점 연말 준비, 지금 확인할 3가지<em>10월 20일호 · 단체 예약 안내 · 주류 세트 · 오픈 준비</em></p>
@@ -235,6 +246,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var p=new URLSearchParams(location.search);
   if(p.get('utm_source')==='naver') gtag('event','campaign_landing_view',{campaign_source:'naver',campaign_medium:p.get('utm_medium')||'cpc',campaign_name:p.get('utm_campaign')||'new_opening'});
   function track(selector,eventName,method){document.querySelectorAll(selector).forEach(function(link){link.addEventListener('click',function(){gtag('event',eventName,{contact_method:method});});});}
+  document.querySelectorAll('.reel-guide').forEach(function(link){link.addEventListener('click',function(){gtag('event','campaign_blog_click',{campaign_name:'founder_reels_202611',topic:link.dataset.topic,link_url:link.href});});});
+  if(p.get('utm_source')==='instagram') gtag('event','campaign_landing_view',{campaign_source:'instagram',campaign_name:p.get('utm_campaign')||'profile'});
   track('a[href^="tel:"]','consultation_phone_click','phone');
   track('a[href*="pf.kakao.com"]','consultation_kakao_click','kakao');
   track('a[href*="instagram.com"]','consultation_instagram_click','instagram');
